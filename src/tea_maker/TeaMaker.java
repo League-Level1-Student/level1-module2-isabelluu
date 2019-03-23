@@ -50,15 +50,20 @@ class Kettle {
 		}
 	}
 
+	public boolean isHot() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
 }
 
 class Cup {
 
 	private TeaBag teabag;
 
-	void makeTea(TeaBag teabag, Kettle.Water hotWater) {
+	void makeTea(TeaBag teabag, Kettle water) {
 		this.teabag = teabag;
-		if (hotWater.isHot())
+		if (water.isHot())
 			System.out.println("Making hot " + teabag.getFlavor() + " tea.");
 		else
 			System.out.println("Can't make tea with cold water! ");

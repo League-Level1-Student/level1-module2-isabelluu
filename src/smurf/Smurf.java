@@ -20,8 +20,8 @@ public class Smurf {
 		this.name = name;
 	}
 
-	public String getName() {
-		return "My name is " + name + " Smurf.";
+	public void getName() {
+		System.out.println("My name is " + name + " Smurf.");
 	}
 
 	public void eat() {
@@ -31,12 +31,25 @@ public class Smurf {
 	/* Papa Smurf wears a red hat, all the others are white. */
 	public String getHatColor() {
 		// 3. Fill in this method
+		if(name == "Papa Smurf")
+		{
+			System.out.println(name + "'s hat is red");
+		}
+		else
+			System.out.println(name + "'s hat is white");
+		
 		return "";
 	}
 
 	/* Smurfette is the only female Smurf. */
 	public String isGirlOrBoy() {
 		// 4. Fill in this method
+		if(name == "Smurfette")
+		{
+			System.out.println(name + " is a girl");
+		}
+		else
+			System.out.println(name + " is a boy");
 		return "";
 	}
 
