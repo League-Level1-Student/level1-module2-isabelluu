@@ -34,11 +34,11 @@ This is because there is no Minion class in the package.
  */
 
 public class MinionTest {
-
-	@Test
+	
+	//@Test
 	public void testConstructor() {
 		Minion stuart = new Minion("Stuart", 1, "yellow", "");
-		assertEquals("Stuart", stuart.getName());
+		assertEquals("Stuart",stuart.getName());
 		assertEquals(1, stuart.getEyes());
 		assertEquals("yellow", stuart.getColor());
 
@@ -60,6 +60,14 @@ public class MinionTest {
 	}
 
 }
+
+
+
+
+
+
+
+
 
 
 
